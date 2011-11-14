@@ -1,1 +1,11 @@
-.screenrc
+#Set default shelltitle to blank
+#shelltitle ''
+#Declase static bottom of screen and content
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g} %{= r}%l %{= kG}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+
+#Defaut screens to startup
+screen  -t shell0	0	
+screen  -t shell1	1	
+screen  -t irssi	2	irssi
+screen  -t cmus 	3	cmus
